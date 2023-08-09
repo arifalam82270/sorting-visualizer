@@ -1,0 +1,170 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 96%);
+  }
+  
+  /* Header styles */
+  header {
+    background-color:#1b0c42;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .algos {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  .algos button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .algos button:hover {
+    background-color: #444;
+  }
+  
+  /* Space between buttons */
+  .algos button:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  /* Section styles */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .array-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .array-inputs p {
+    margin-bottom: 0;
+  }
+  
+  #a_size,
+  #a_speed {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  #a_generate {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #a_generate:hover {
+    background-color: #444;
+  }
+  
+  #array_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  /* Info container styles */
+  #Info_Cont1,
+  #Info_Cont2 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .Complexity_Containers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .Pair_Definitions {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Beautiful colors */
+  .array-inputs p,
+  .array-inputs input,
+  #a_generate,
+  .nav-heading {
+    color: #6f88c7;
+  }
+  
+  .algos button {
+    background-color: #3498db;
+  }
+  
+  .algos button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Time and Space Complexity styles */
+  .Complexity_Containers p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .nav-heading {
+      font-size: 1.5rem;
+    }
+  
+    .array-inputs {
+      flex-direction: column;
+    }
+  
+    #array_container {
+      height: 200px;
+    }
+  }
+  
